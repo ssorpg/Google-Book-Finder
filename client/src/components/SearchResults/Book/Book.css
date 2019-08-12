@@ -1,0 +1,20 @@
+.Book {
+    text-align: left;
+    border: 2px solid #808080;
+    padding: 12px;
+    margin: 4px;
+}
+
+.Book > img {
+    height: 150px;
+}
+
+.Book-property {
+    font-size: 14px;
+    margin: 4px;
+}
+
+.Book-link {
+    position: absolute;
+    bottom: 0;
+}

@@ -1,0 +1,18 @@
+.SearchField {
+  height: 16vh;
+  width: 80%;
+  margin: auto;
+  font-size: calc(10px + 2vmin);
+}
+
+.SearchField-form {
+  border: 4px solid #d3d3d3;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+.SearchField-label {
+  text-align: left;
+  display: block;
+  font-size: 22px;
+}

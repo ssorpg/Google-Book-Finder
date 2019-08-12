@@ -1,0 +1,35 @@
+.Header {
+    height: 16vh;
+    width: 80%;
+    margin: auto;
+    color: #ffffff;
+    background-color: #59b2ff;
+    margin-bottom: 40px;
+    border-bottom: 2px solid #ffffff;
+}
+
+.Header-size {
+    margin: auto;
+    padding: 0 10px;
+    height: 100%;
+    max-width: 1300px;
+    min-width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Header-text {
+    margin: 0;
+    margin-bottom: 8px;
+    font-size: 3em;
+}
+
+.Header-correct {
+    color: #b6ffb6;
+}
+
+.Header-incorrect {
+    color: #ffacac;
+}
