@@ -6,7 +6,7 @@
 }
 
 .Book > img {
-    height: 150px;
+    max-height: 150px;
 }
 
 .Book-property {
@@ -17,4 +17,10 @@
 .Book-link {
     position: absolute;
     bottom: 0;
+}
+
+.Book-submit {
+    position: absolute;
+    top: 0;
+    right: 0;
 }

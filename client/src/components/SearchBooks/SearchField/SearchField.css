@@ -1,7 +1,8 @@
 .SearchField {
-  height: 16vh;
+  min-height: 20%;
   width: 80%;
   margin: auto;
+  margin-bottom: 40px;
   font-size: calc(10px + 2vmin);
 }
 

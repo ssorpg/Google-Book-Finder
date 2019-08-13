@@ -1,40 +1,24 @@
 import React from 'react';
-import API from "./utils/API";
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Navs from './components/Navs/Navs'
 import Header from './components/Header/Header';
-import SearchField from './components/SearchField/SearchField';
-import SearchResults from './components/SearchResults/SearchResults';
+import SearchBooks from './components/SearchBooks/SearchBooks';
+import SavedBooks from './components/SavedBooks/SavedBooks';
 import './App.css';
 
-class App extends React.Component {
-  state = {
-    books: []
-  };
-
-  componentDidMount = () => {
-    API.getBooks()
-      .then(res => {
-        this.setState({ books: res.data })
-      })
-  }
-
-  searchBooks = event => {
-    event.preventDefault();
-
-    API.getBook(event.target.value)
-      .then(res => {
-        this.setState({ books: res.data })
-      })
-  }
-
-  render() {
-    return (
+function App() {
+  return (
+    <Router>
       <div className="App">
-        <Header></Header>
-        <SearchField searchBooks={this.searchBooks}></SearchField>
-        <SearchResults books={this.state.books}></SearchResults>
+        <Navs />
+        <Header />
+        <Switch>
+          <Route exact path="/" component={SearchBooks} />
+          <Route exact path="/saved" component={SavedBooks} />
+        </Switch>
       </div>
-    );
-  };
+    </Router>
+  );
 }
 
 export default App;
