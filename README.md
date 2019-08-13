@@ -21,6 +21,6 @@ On the search page you can search for books by entering in a title in the search
 
 ![Google-Book-Finder](https://github.com/ssorpg/google-book-finder/blob/master/google-book-finder-saved.PNG)
 
-On the saved page you can viewed any books you've saved. These books are located in your MongoDB database.
+On the saved page you can viewed any books you've saved, and can delete ones you no longer need saved. Saved books are located in your MongoDB database.
 
 Now get Googling!
